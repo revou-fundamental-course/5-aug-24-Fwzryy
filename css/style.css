@@ -57,19 +57,21 @@
     background: #fafafa;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.5);
     margin-top: -10rem;
 
   }
 
 
   h1 {
-    color: rgb(0, 0, 0, 0.7);
+    color: rgba(255, 0, 0, 0.7);
     font-weight: bold;
     font-size: 36px;
     padding: 30px 0;
-    
+    font-family: "Kalnia Glaze", serif;
+    letter-spacing: px;
   }
+  
 /* ----------- */
     .content {
         padding: 0 30px;
@@ -91,7 +93,7 @@
     }.input input {
         outline: none;
         border: none;
-        border-bottom: 1px solid #4f7df9;
+        border-bottom: 1px solid #000000;
         width: 50%;
         text-align: center;
         font-size: 28px;
@@ -111,7 +113,7 @@
     }.inputW input {
         outline: none;
         border: none;
-        border-bottom: 1px solid #4f7df9;
+        border-bottom: 1px solid #000000;
         width: 50%;
         text-align: center;
         font-size: 28px;
@@ -132,32 +134,51 @@
     }.inputH input {
         outline: none;
         border: none;
-        border-bottom: 1px solid #4f7df9;
+        border-bottom: 1px solid #000000;
         width: 50%;
         text-align: center;
         font-size: 28px;
-        font-family: "Nunito", sans-serif;
+       
     }
 
   /* ------ BUTTON ------ */
-  button.calculate {
-    cursor: pointer;
-    font-family: "Nunito", sans-serif;
-    color: #fff;
-    background: rgb(97,138,254,1);
-    font-size: 16px;
-    border-radius: 7px;
-    padding: 12px 0;
-    width: 100%;
-    outline: none;
-    border: none;
-    transition: all 0.5s;
-  }
+
   button.calculate:hover {
-    background: #0044ff;
+    background-image: linear-gradient(144deg,#9e0861, #c5174d 50%,#dd3f31);
+    border: 0;
+    transition: 2s ease all;
   }
 
+  button.calculate {
+    align-items: center;
+    background-image: linear-gradient(144deg,#8a2485, #ba1377 50%,#dd2962);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    font-family: "Signika", sans-serif;
+    transition: 0.3s;
+  }
   
+  button.calculate:active{
+    outline: 0;
+    
+  }
   /* ------ RESULT ------ */
 .result {
     padding: 10px 20px;
@@ -165,18 +186,21 @@
   .result p {
     font-weight: 600;
     font-size: 22px;
-    color: #000;
+    color:-webkit-linear-gradient(#eee, #333);
     margin-bottom: 15px;
   }
   .result #result {
     font-size: 36px;
     font-weight: 900;
-    color: #4f7df9;
     background-color: #eaeaea;
     display: inline-block;
     padding: 7px 20px;
     border-radius: 55px;
     margin-bottom: 25px;
+
+    background: -webkit-linear-gradient(#8a2485, #c5174d);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   #comment {
     color: #4f7df9;
@@ -363,7 +387,5 @@ border: 2px solid red;
 
       width: 380px;
     }
-
-
 
 }
