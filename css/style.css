@@ -1,20 +1,13 @@
-h1 {
-    font-size: 4rem;
-  }
-h2 {
-    font-size: 2rem;
-}
-  p {
-    font-size: 1.5rem;
-  }
+
   body {
     margin: 0;
-    font-family: 'Prompt', sans-serif;
-    color: white;
+    font-family: "Signika", sans-serif;
+    color: rgb(0, 0, 0);
     background: #202731;
     overflow-x: hidden;
   }
 
+  /* background */
   section {
     position: relative;
     display: flex;
@@ -24,75 +17,6 @@ h2 {
     padding-top: 100px;
   }
 
-  .dark {
-    background: #0f0f10;
-  }
-
-  /* Curved bg with plain CSS */
-
-  .curve {
-    position: absolute;
-    height: 250px;
-    width: 100%;
-    bottom: 0;
-    text-align: center;
-  }
-
-  .curve::before {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    transform: translate(85%, 60%);
-    background-color: hsl(216, 21%, 16%);
-  }
-
-  .curve::after {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    background-color: #3c31dd;
-    transform: translate(-4%, 40%);
-    z-index: -1;
-  }
-
-  /* Bubble bg with plain CSS */
-
-  .bubble::after {
-    content: '';
-    border-top-left-radius: 50% 100%;
-    border-top-right-radius: 50% 100%;
-    position: absolute;
-    bottom: 0;
-    z-index: -1;
-    width: 100%;
-    background-color: #0f0f10;
-    height: 85%;
-  }
-  .wave {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-  }
-
-  .wave svg {
-    position: relative;
-    display: block;
-    width: calc(103% + 1.3px);
-    height: 262px;
-  }
-
-  .wave .shape-fill {
-    fill: hsl(240, 3%, 6%);
-  }
 
   .spacer {
     aspect-ratio: 960/300;
@@ -123,10 +47,323 @@ h2 {
     width: 100%;
     background: url('../assets/blobs.svg') no-repeat bottom / cover;
   }
+  /* END background */
 
-  .title h2 {
+
+
+  /* content form bmi */
+  .box {
+    width: 700px;
+    background: #fafafa;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 2px 2px 20px 5px rgba(0,0,0,0.5);
+    margin-top: -10rem;
+
+  }
+
+
+  h1 {
+    color: rgb(0, 0, 0, 0.7);
+    font-weight: bold;
+    font-size: 36px;
+    padding: 30px 0;
+    
+  }
+/* ----------- */
+    .content {
+        padding: 0 30px;
+        
+    }
+    /* ------ INPUT ------ */
+    .input {
+        background: #fff;
+        box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }.input label {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 20px;
+    }.input input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #4f7df9;
+        width: 50%;
+        text-align: center;
+        font-size: 28px;
+        font-family: "Nunito", sans-serif;
+    }.inputW {
+        background: #fff;
+        box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }.inputW label {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 20px;
+    }.inputW input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #4f7df9;
+        width: 50%;
+        text-align: center;
+        font-size: 28px;
+        font-family: "Nunito", sans-serif;
+    }.inputH {
+        background: #fff;
+        box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        padding: 10px 0;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }.inputH label {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 20px;
+    }.inputH input {
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #4f7df9;
+        width: 50%;
+        text-align: center;
+        font-size: 28px;
+        font-family: "Nunito", sans-serif;
+    }
+
+  /* ------ BUTTON ------ */
+  button.calculate {
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+    background: rgb(97,138,254,1);
+    font-size: 16px;
+    border-radius: 7px;
+    padding: 12px 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    transition: all 0.5s;
+  }
+  button.calculate:hover {
+    background: #0044ff;
+  }
+
+  
+  /* ------ RESULT ------ */
+.result {
+    padding: 10px 20px;
+  }
+  .result p {
+    font-weight: 600;
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  .result #result {
+    font-size: 36px;
+    font-weight: 900;
+    color: #4f7df9;
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 25px;
+  }
+  #comment {
+    color: #4f7df9;
+    font-weight: 800;
+  }
+
+.comment {
+    display: none;
+    border: dashed 1px;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.footer {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    margin-top: 23rem;
+    padding: 10px 15px
+}
+
+.footer-text {
+    text-decoration: none;
+    color: rgba(40, 40, 40, 0.8);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    transition: all 0.5;
+}
+
+.footer-text:hover {
+    color: rgba(40, 40, 40, 1);
+}
+
+.gender {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background: #fff;
+    box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}.gender .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    /* margin-bottom: 12px; */
+    margin-top: 7px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }.gender .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  
+  .checkmark {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+
+  .gender .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .gender .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+/* membuat indicator */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* memunculkan indicator ketika checked */
+  .gender .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* styling indicator */
+  .gender .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+
+.containerHW {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 300px;
+
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: #393c76 -1px 2px 2px 1px;
+}
+
+#modalText {
+  padding-top: 8px;
+  padding-right: 5px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(24, 23, 23);
+}
+
+.modal-wrong {
+border: 2px solid red;
+}
+
+.modal-correct {
+  border: 2px solid green;
+  }
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.close:hover {
+  color: #d41111; 
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 700px){
+    .box {
+        width: 380px;
+    }
+    .input label {
+        font-size: 18px;
+    }
+    .inputH label, .inputW label {
+        font-size: 14px;
+    }
+    .input input, .inputH input, .inputW input{
+        font-size: 24px;
+    }
+    .modal-content {
+
+      width: 380px;
+    }
+
+
+
 }
