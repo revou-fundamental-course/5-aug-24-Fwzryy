@@ -203,7 +203,7 @@
     -webkit-text-fill-color: transparent;
   }
   #comment {
-    color: #4f7df9;
+    color: #b71a54;
     font-weight: 800;
   }
 
@@ -279,7 +279,7 @@
   }
   
   .gender .container input:checked ~ .checkmark {
-    background-color: #2196F3;
+    background-color: #8a2485;
   }
   
 /* membuat indicator */
